@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
-    locales: ['vi', 'en'],
-    defaultLocale: 'vi',
+    locales: ['vi-VN', 'en-US'],
+    defaultLocale: 'vi-VN',
     localeDetection: false,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

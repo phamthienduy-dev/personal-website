@@ -1,10 +1,21 @@
-import React from 'react'
-// import { useRouter } from 'next/router'
+import React from 'react';
 
-// type Props = {}
+import { useIntl } from 'react-intl';
 
-export const NavBar = () => {
-  // const { locale, locales, defaultLocale } = useRouter()
+export function NavBar() {
+  const intl = useIntl();
 
-  return <div></div>
+  return (
+    <h1>
+      {intl.formatMessage(
+        {
+          description: 'A message', // Description should be a string literal
+          defaultMessage: 'My name is {name}', // Message should be a string literal
+        },
+        {
+          name: 'BOB',
+        }, // Values should be an object literal, but not necessarily every value inside
+      )}
+    </h1>
+  );
 }
