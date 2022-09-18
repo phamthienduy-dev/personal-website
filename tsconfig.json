@@ -19,7 +19,8 @@
       "@/components": ["components/index.ts"],
       "@/i18n": ["i18n/index.ts"],
       "@/config": ["config/index.ts"],
-      "@/content": ["content/index.ts"]
+      "@/content": ["content/index.ts"],
+      "@/sections": ["sections/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

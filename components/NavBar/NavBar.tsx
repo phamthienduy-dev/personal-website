@@ -2,20 +2,23 @@ import React from 'react';
 
 import { useIntl } from 'react-intl';
 
-export function NavBar() {
-  const intl = useIntl();
+import { Logo, NavLink } from '@/components';
+
+export const NavBar = () => {
+  const { formatMessage } = useIntl();
 
   return (
-    <h1>
-      {intl.formatMessage(
-        {
-          description: 'A message', // Description should be a string literal
-          defaultMessage: 'My name is {name}', // Message should be a string literal
-        },
-        {
-          name: 'BOB',
-        }, // Values should be an object literal, but not necessarily every value inside
-      )}
-    </h1>
+    <div>
+      <div className="container">
+        <div className="flex justify-between text-gray-500">
+          <div className="flex text-4xl font-extrabold justify-self-start">
+            <Logo />
+          </div>
+          <nav>
+            <NavLink>{formatMessage({ defaultMessage: 'Giới thiệu' })}SSSS</NavLink>
+          </nav>
+        </div>
+      </div>
+    </div>
   );
-}
+};

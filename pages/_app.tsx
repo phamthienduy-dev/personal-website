@@ -4,7 +4,7 @@ import { useMemo } from 'react';
 
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import { FormattedMessage, IntlProvider } from 'react-intl';
+import { IntlProvider } from 'react-intl';
 
 import English from '../content/locales/en.json';
 import Vietnamese from '../content/locales/vi.json';
@@ -27,7 +27,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <IntlProvider locale={shortLocale} messages={messages} onError={() => null}>
-      <FormattedMessage defaultMessage="bla bla" />
       <Component {...pageProps} />
     </IntlProvider>
   );
