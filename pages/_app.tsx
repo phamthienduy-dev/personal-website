@@ -2,6 +2,7 @@ import '../styles/globals.css';
 
 import { useMemo } from 'react';
 
+import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { IntlProvider } from 'react-intl';
@@ -27,7 +28,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <IntlProvider locale={shortLocale} messages={messages} onError={() => null}>
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class" enableSystem={false}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </IntlProvider>
   );
 }

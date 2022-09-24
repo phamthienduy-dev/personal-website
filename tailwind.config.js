@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -33,6 +34,9 @@ module.exports = {
           200: '#4933F0',
           300: '#4C46BE',
         },
+      },
+      fontFamily: {
+        raleway: ['raleway'],
       },
     },
   },
