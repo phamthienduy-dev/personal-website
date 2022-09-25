@@ -25,7 +25,7 @@ export const NavBar = () => {
   // };
 
   return (
-    <nav className="mb-32 rounded-t-2xl">
+    <nav className="rounded-t-2xl">
       <div className="flex items-center justify-between text-gray-500">
         <div className="flex justify-self-start text-4xl font-extrabold ">
           <Logo />

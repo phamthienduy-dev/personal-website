@@ -2,7 +2,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { HeroSection } from '@/sections';
+import { HeroSection, InfoSection } from '@/sections';
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="font-railway background p-4  text-gray-400 dark:bg-gray-900 dark:text-gray-200">
         <HeroSection />
+        <InfoSection />
       </div>
     </>
   );
