@@ -21,9 +21,10 @@
       "@/config": ["config/index.ts"],
       "@/content": ["content/index.ts"],
       "@/sections": ["sections/index.ts"],
-      "@/static": ["static/images/index.ts"]
+      "@/static": ["static/images/index.ts"],
+      "@/types": ["types/index.ts"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sections/InfoSection/InTechs"],
   "exclude": ["node_modules"]
 }
