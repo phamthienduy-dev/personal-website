@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { useIntl } from 'react-intl';
 
-import { BlueText, PrimaryButton, PurpleText } from '@/components';
+import { BlueText, PurpleText, SecondaryButton } from '@/components';
 import { ProfileImage } from '@/static';
 import { ComponentProps } from '@/types';
 
@@ -42,8 +42,8 @@ export const InfoCard: FC<ComponentProps> = ({ className }) => {
           })}
         </p>
       </div>
-      <div className="flex">
-        <PrimaryButton className="justify-self-end">RESUME</PrimaryButton>
+      <div className="flex justify-end">
+        <SecondaryButton className="justify-self-end">RESUME</SecondaryButton>
       </div>
     </div>
   );

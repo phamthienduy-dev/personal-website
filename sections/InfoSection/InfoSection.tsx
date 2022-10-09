@@ -7,7 +7,7 @@ import { InfoTechs } from './InfoTechs/InfoTechs';
 
 export const InfoSection = () => {
   return (
-    <SectionBox>
+    <SectionBox className="mb-16">
       <div className="grid  grid-cols-12 grid-rows-1 gap-4">
         <InfoCard className="col-span-3" />
         <InfoTechs className="col-span-9" />
