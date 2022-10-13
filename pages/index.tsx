@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { useIntl } from 'react-intl';
 
 import { SectionPrimaryHeading } from '@/components';
-import { HeroSection, InfoSection } from '@/sections';
+import { HeroSection, InfoSection, ProjectSection } from '@/sections';
 
 const Home: NextPage = () => {
   const { formatMessage } = useIntl();
@@ -27,6 +27,7 @@ const Home: NextPage = () => {
           heading={formatMessage({ defaultMessage: 'Dự án' })}
           subheading={formatMessage({ defaultMessage: 'Mình làm được gì' })}
         />
+        <ProjectSection />
       </div>
     </>
   );
