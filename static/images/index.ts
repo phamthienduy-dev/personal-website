@@ -3,7 +3,7 @@ import forkify from './forkify.png';
 import HeroIllustration from './HeroIllustration.svg';
 import HeroIllustrationDark from './HeroIllustrationDark.svg';
 import HeroTest from './HeroTest.svg';
-import OmifoodApp from './Omnifood.png';
+import OmnifoodApp from './Omnifood.png';
 import ProfileImage from './ProfileImage.png';
 import LGCosmetics from './LGCosmetics.png';
 import Nestle from './Nestle.png';
@@ -13,7 +13,7 @@ export {
   forkify,
   HeroIllustration,
   HeroIllustrationDark,
-  OmifoodApp,
+  OmnifoodApp,
   ProfileImage,
   HeroTest,
   LGCosmetics,

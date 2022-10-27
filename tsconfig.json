@@ -16,15 +16,15 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components": ["components/index.ts"],
-      "@/i18n": ["i18n/index.ts"],
-      "@/config": ["config/index.ts"],
-      "@/content": ["content/index.ts"],
-      "@/sections": ["sections/index.ts"],
-      "@/static": ["static/images/index.ts"],
-      "@/types": ["types/index.ts"]
+      "@components": ["components/index.ts"],
+      "@i18n": ["i18n/index.ts"],
+      "@config": ["config/index.ts"],
+      "@content": ["content/index.ts"],
+      "@sections": ["sections/index.ts"],
+      "@static": ["static/images/index.ts"],
+      "@types": ["types/index.ts"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sections/InfoSection/InTechs"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

@@ -12,7 +12,7 @@ import {
 } from 'react-icons/si';
 import { HiDotsHorizontal } from 'react-icons/hi';
 
-import { ComponentProps } from '@/types';
+import { ComponentProps } from '@types';
 import { InfoTechsItem } from './InfoTechsItem';
 
 export const InfoTechs: FC<ComponentProps> = ({ className }) => {

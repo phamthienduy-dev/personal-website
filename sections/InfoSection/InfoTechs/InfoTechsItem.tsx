@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 
-import { ComponentProps } from 'types/types';
+import { ComponentProps } from '@types';
 
 type Props = {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SectionBox } from '@/components';
+import { SectionBox } from '@components';
 
 import { InfoCard } from './InfoCard';
 import { InfoTechs } from './InfoTechs/InfoTechs';

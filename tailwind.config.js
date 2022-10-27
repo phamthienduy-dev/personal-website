@@ -11,12 +11,11 @@ module.exports = {
       center: true,
     },
     extend: {
+      screens: {
+        '2xl': '1280px',
+      },
       colors: {
-        primary: {
-          100: '#58CAEA',
-          200: '#339AF0',
-          300: '#407bff',
-        },
+        primary: '#023E8A',
         secondary: {
           100: '#7A5BF5',
           200: '#4933F0',
@@ -24,11 +23,7 @@ module.exports = {
         },
       },
       textColor: {
-        primary: {
-          100: '#58CAEA',
-          200: '#339AF0',
-          300: '#407bff',
-        },
+        primary: '#454545',
         secondary: {
           100: '#7A5BF5',
           200: '#4933F0',
@@ -36,7 +31,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        raleway: ['raleway'],
+        body: ['Montserrat'],
       },
     },
   },

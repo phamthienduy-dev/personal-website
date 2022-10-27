@@ -4,9 +4,9 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import { useIntl } from 'react-intl';
 
-import { BlueText, PurpleText, SecondaryButton } from '@/components';
-import { ProfileImage } from '@/static';
-import { ComponentProps } from '@/types';
+import { ProfileImage } from '@static';
+import { BlueText, PurpleText, SecondaryButton } from '@components';
+import { ComponentProps } from '@types';
 
 export const InfoCard: FC<ComponentProps> = ({ className }) => {
   const { formatMessage } = useIntl();
