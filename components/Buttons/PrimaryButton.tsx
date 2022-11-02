@@ -12,10 +12,10 @@ export const PrimaryButton = ({ children, onClick, className, ...props }: Props)
   return (
     <motion.button
       onClick={onClick}
-      className={`rounded-md bg-primary py-4  px-8 text-sm font-semibold uppercase text-white ${className}`}
-      whileHover={{ scale: 1.05 }}
+      className={`h-10 w-40 rounded-md bg-primary text-sm font-semibold uppercase text-white ${className}`}
+      whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      transition={{ duration: 0.3 }}
+      // transition={{ duration: 0.3 }}
       {...props}
     >
       {children}

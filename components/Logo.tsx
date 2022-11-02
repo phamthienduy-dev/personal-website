@@ -1,13 +1,12 @@
 import React, { FC } from 'react';
 
 type Props = {
-  className?: string;
   onClick?: () => void;
 };
 
-export const Logo: FC<Props> = ({ className, onClick }) => {
+export const Logo: FC<Props> = ({ onClick }) => {
   return (
-    <div className={`cursor-pointer ${className}`} onClick={() => onClick}>
+    <div className="cursor-pointer " onClick={() => onClick}>
       <span>LOGO</span>
     </div>
   );

@@ -1,10 +1,12 @@
 /* eslint-disable tailwindcss/no-custom-classname */
-import { NavBar } from '@components';
+import { NavBar, SectionPrimaryHeading } from '@components';
 import { HeroSection } from '@sections';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useIntl } from 'react-intl';
 
 const Home: NextPage = () => {
+  const { formatMessage } = useIntl();
   return (
     <>
       <Head>
@@ -13,8 +15,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/static/images/favicon.ico" />
       </Head>
       <div className="container relative h-screen  overflow-hidden font-body text-primary">
-        <NavBar className="mb-8" />
+        <NavBar />
         <HeroSection />
+        <SectionPrimaryHeading>
+          {formatMessage({ defaultMessage: 'About me' })}
+        </SectionPrimaryHeading>
       </div>
     </>
   );

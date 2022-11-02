@@ -1,13 +1,12 @@
-import React, { FC, useState } from 'react';
+import React, { useState } from 'react';
 
 import { useTheme } from 'next-themes';
 import { IoMoon } from 'react-icons/io5';
 import { Logo, NavLink, NavMenu } from '@components';
-import { ComponentProps } from '@types';
 import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
 
-export const NavBar: FC<ComponentProps> = ({ className }) => {
+export const NavBar = () => {
   const { theme, setTheme } = useTheme();
   const [isNavMenuOpened, setIsNavMenuOpened] = useState(false);
 
@@ -25,13 +24,8 @@ export const NavBar: FC<ComponentProps> = ({ className }) => {
     setIsNavMenuOpened((prevState) => !prevState);
   };
 
-  const variants = {
-    open: { x: '100%' },
-    closed: { x: 0 },
-  };
-
   return (
-    <div className={className}>
+    <div className="mb-8">
       <div className="container px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="flex justify-self-start text-4xl font-extrabold ">
@@ -43,7 +37,7 @@ export const NavBar: FC<ComponentProps> = ({ className }) => {
             </NavLink>
             <NavLink className="z-50" onClick={handleToggleNavMenu}>
               <Hamburger
-                toggled={!isNavMenuOpened}
+                toggled={isNavMenuOpened}
                 toggle={() => handleToggleNavMenu}
                 size={24}
               />
@@ -51,12 +45,11 @@ export const NavBar: FC<ComponentProps> = ({ className }) => {
           </div>
         </div>
         <motion.div
-          animate={{ x: isNavMenuOpened ? '100%' : 0 }}
-          variants={variants}
+          animate={{ x: isNavMenuOpened ? 0 : '100%' }}
           className="absolute top-0 right-0 z-40 h-screen w-1/2 bg-white"
           transition={{ duration: 0.3 }}
         >
-          <NavMenu onMenuClose={() => setIsNavMenuOpened(true)} />
+          <NavMenu onMenuClose={() => setIsNavMenuOpened(false)} />
         </motion.div>
       </div>
     </div>

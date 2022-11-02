@@ -4,5 +4,4 @@ export type ComponentProps = {
 
 export type HeadingProps = {
   heading: string;
-  subheading?: string;
 };

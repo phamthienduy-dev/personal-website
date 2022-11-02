@@ -17,18 +17,11 @@ module.exports = {
       colors: {
         primary: '#023E8A',
         secondary: {
-          100: '#7A5BF5',
-          200: '#4933F0',
-          300: '#4C46BE',
+          100: '#CAF0F8',
         },
       },
       textColor: {
         primary: '#454545',
-        secondary: {
-          100: '#7A5BF5',
-          200: '#4933F0',
-          300: '#4C46BE',
-        },
       },
       fontFamily: {
         body: ['Montserrat'],
