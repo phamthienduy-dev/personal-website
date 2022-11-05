@@ -3,19 +3,19 @@ import React, { FC } from 'react';
 
 type Props = {
   children: React.ReactNode;
-  underlineColor?: string;
+  underlineBackground?: string;
 };
 
 export const UnderlineText: FC<Props & ComponentProps> = ({
   children,
   className,
-  underlineColor,
+  underlineBackground,
 }) => {
   return (
-    <div className={`${className}`}>
-      <span className="relative">
-        {children}
-        <div className={`absolute -z-10 h-5 w-full -translate-y-1/2 ${underlineColor}`} />
+    <div className={`${className || null} w-fit `}>
+      <span className="w-fit">
+        <span>{children}</span>
+        <div className={`-mt-4 h-5 ${underlineBackground || 'bg-primary'}`} />
       </span>
     </div>
   );

@@ -17,11 +17,11 @@ export const HeroSection = () => {
           </h1>
           <UnderlineText
             className="mb-8 text-5xl font-bold"
-            underlineColor="bg-secondary-100"
+            underlineBackground="bg-secondary-100"
           >
             Frontend Developer
           </UnderlineText>
-          <PrimaryButton className="w-fit">RESUME</PrimaryButton>
+          <PrimaryButton>RESUME</PrimaryButton>
         </div>
         <div className="relative justify-end">
           <div className="absolute top-0 right-[64px]">

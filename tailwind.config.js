@@ -18,6 +18,8 @@ module.exports = {
         primary: '#023E8A',
         secondary: {
           100: '#CAF0F8',
+          200: '#ADE8F4',
+          300: '#90E0EF',
         },
       },
       textColor: {
