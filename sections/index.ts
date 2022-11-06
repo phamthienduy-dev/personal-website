@@ -1,3 +1,3 @@
 export * from './HeroSection';
-export * from './InfoSection';
 export * from './AboutSection';
+export * from './ProjectsSection';
