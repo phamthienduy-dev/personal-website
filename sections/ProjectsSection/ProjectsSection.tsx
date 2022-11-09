@@ -1,10 +1,11 @@
 import React from 'react';
-import { LGCosmeticsProject } from './LGCosmetics';
+import { LGCosmeticsProject, HeraAdmin } from '@sections';
 
 export const ProjectsSection = () => {
   return (
-    <div>
+    <div className="mb-20">
       <LGCosmeticsProject />
+      <HeraAdmin />
     </div>
   );
 };

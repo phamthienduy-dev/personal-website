@@ -6,7 +6,7 @@ import HeroTest from './HeroTest.svg';
 import OmnifoodApp from './Omnifood.png';
 import ProfileImage from './ProfileImage.png';
 import LGCosmetics from './LGCosmetics.png';
-import Nestle from './Nestle.png';
+import HeraAdmin from './HeraAdmin.png';
 
 export {
   CTAIllustration,
@@ -17,5 +17,5 @@ export {
   ProfileImage,
   HeroTest,
   LGCosmetics,
-  Nestle,
+  HeraAdmin,
 };

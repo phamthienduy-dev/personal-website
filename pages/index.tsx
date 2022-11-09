@@ -1,6 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 import { NavBar, SectionPrimaryHeading } from '@components';
-import { AboutSection, HeroSection, ProjectsSection } from '@sections';
+import { AboutSection, CTASection, HeroSection, ProjectsSection } from '@sections';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useIntl } from 'react-intl';
@@ -26,6 +26,7 @@ const Home: NextPage = () => {
             {formatMessage({ defaultMessage: 'Projects' })}
           </SectionPrimaryHeading>
           <ProjectsSection />
+          <CTASection />
         </div>
       </div>
     </>
