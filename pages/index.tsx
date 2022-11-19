@@ -4,6 +4,7 @@ import { AboutSection, CTASection, HeroSection, ProjectsSection } from '@section
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useIntl } from 'react-intl';
+import { Footer } from 'sections/Footer';
 
 const Home: NextPage = () => {
   const { formatMessage } = useIntl();
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
           </SectionPrimaryHeading>
           <ProjectsSection />
           <CTASection />
+          <Footer />
         </div>
       </div>
     </>
