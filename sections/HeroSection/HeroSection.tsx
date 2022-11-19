@@ -31,6 +31,7 @@ export const HeroSection = () => {
                 width={405}
                 height={530}
                 className="rounded-[64px]"
+                priority
               />
             </div>
           </div>
