@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 import { useTheme } from 'next-themes';
-import { IoMoon } from 'react-icons/io5';
 import { Logo, NavLink, NavMenu } from '@components';
 import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 export const NavBar = () => {
   const { theme, setTheme } = useTheme();
@@ -32,8 +32,13 @@ export const NavBar = () => {
             <Logo />
           </div>
           <div className="flex items-center gap-4">
-            <NavLink onClick={handleChangeTheme}>
-              <IoMoon className="h-6 w-6" />
+            <NavLink>
+              <DarkModeSwitch
+                onChange={handleChangeTheme}
+                checked={theme === 'light'}
+                moonColor="#454545"
+                sunColor="#FFF"
+              />
             </NavLink>
             <NavLink className="z-50" onClick={handleToggleNavMenu}>
               <Hamburger

@@ -13,7 +13,7 @@ export const AboutTech = () => {
       <div className="flex flex-col items-center justify-center p-16">
         <div className="mb-14 grid grid-cols-3 grid-rows-2 gap-16">
           <AboutTechItem>React</AboutTechItem>
-          <AboutTechItem>TypeScript</AboutTechItem>
+          <AboutTechItem>Typescript</AboutTechItem>
           <AboutTechItem>NextJS</AboutTechItem>
           <AboutTechItem className="row-start-2">HTML5</AboutTechItem>
           <AboutTechItem className="row-start-2">CSS3</AboutTechItem>
@@ -24,7 +24,7 @@ export const AboutTech = () => {
           <BsArrowRightShort width={14} height={14} />
         </div>
       </div>
-      <div className="flex h-[490px] items-center justify-center rounded-[64px] bg-gray-50">
+      <div className="flex h-[490px] items-center justify-center rounded-[64px] bg-gray-50 dark:bg-[#303030]">
         <div>
           <span className="mb-4 block text-5xl font-semibold">Tech</span>
           <UnderlineText

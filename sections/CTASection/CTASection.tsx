@@ -1,4 +1,4 @@
-import { CustomButton } from '@components';
+import { SecondaryButton } from '@components';
 import React from 'react';
 
 export const CTASection = () => {
@@ -23,9 +23,7 @@ export const CTASection = () => {
           className="mb-8 block w-full resize-none border-b border-inherit bg-transparent pb-8 text-white placeholder:text-white"
           placeholder="What is your message?"
         />
-        <CustomButton backgroundColor="#fff" textColor="#000">
-          Send
-        </CustomButton>
+        <SecondaryButton>Send</SecondaryButton>
       </form>
     </div>
   );

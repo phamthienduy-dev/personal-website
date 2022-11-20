@@ -6,7 +6,7 @@ export const AboutInfo = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <div className="mb-8 grid grid-cols-2 grid-rows-1 rounded-[64px] bg-gray-50">
+    <div className="mb-8 grid grid-cols-2 grid-rows-1 rounded-[64px] bg-gray-50 dark:bg-[#303030]">
       <div className="flex items-center justify-center">
         <div className="flex flex-col gap-2">
           <span className="block text-5xl font-semibold">

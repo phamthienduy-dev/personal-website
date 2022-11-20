@@ -1,27 +1,32 @@
 import { Logo } from '@components';
 import React from 'react';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-1">
-      <div className="flex flex-col justify-self-start">
-        <Logo />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo proin cursus amet
-          nulla.
-        </p>
+    <div className="container grid grid-cols-4 grid-rows-1 pb-14">
+      <Logo />
+      <div>
+        <h6 className="pb-5 font-bold">Sections</h6>
+        <div className="flex flex-col gap-2">
+          <span>About</span>
+          <span>Projects</span>
+          <span>Tools</span>
+          <span>Blogs</span>
+        </div>
       </div>
       <div>
-        <h6>Sections</h6>
-        <span>About</span>
-        <span>Projects</span>
-        <span>Tools</span>
-        <span>Blogs</span>
-      </div>
-      <div>
-        <h6>Contact</h6>
-        <div>0938004592</div>
-        <div>duyphamthien@outlook.com</div>
+        <h6 className="pb-5 font-bold">Contact</h6>
+        <div className="flex flex-col gap-2 ">
+          <div className="flex items-center gap-1">
+            <FaPhoneAlt />
+            <a href="tel:+0938004592">0938004592</a>
+          </div>
+          <div className="flex items-center gap-1">
+            <FaEnvelope />
+            <a href="mailto:duyphamthien@outlook.com">duyphamthien@outlook.com</a>
+          </div>
+        </div>
       </div>
       <div>Designed and developed by me</div>
     </div>
