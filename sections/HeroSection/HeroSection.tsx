@@ -17,6 +17,7 @@ export const HeroSection = () => {
           </h1>
           <UnderlineText
             className="mb-8 text-5xl font-bold"
+            darkUnderlineBackground="dark:bg-[#0F6171]"
             underlineBackground="bg-secondary-100"
           >
             Frontend Developer

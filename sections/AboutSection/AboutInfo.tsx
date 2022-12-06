@@ -17,7 +17,8 @@ export const AboutInfo = () => {
           </span>
           <UnderlineText
             className="text-5xl font-bold"
-            underlineBackground="bg-secondary-100"
+            underlineBackground="secondary-100"
+            darkUnderlineBackground="#0F6171"
           >
             {formatMessage({ defaultMessage: 'Code.' })}
           </UnderlineText>

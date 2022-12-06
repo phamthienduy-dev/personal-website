@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.8",
+    "classnames": "^2.3.2",
     "framer-motion": "^7.3.5",
     "hamburger-react": "^2.5.0",
     "next": "12.2.5",
@@ -21,7 +22,6 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-intl": "^6.1.1",
-    "react-toggle-dark-mode": "^1.1.1",
     "tailwindcss-border-gradient-radius": "^3.0.1"
   },
   "devDependencies": {

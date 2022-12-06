@@ -28,15 +28,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [shortLocale]);
 
   return (
-    <div className="transition duration-500 dark:bg-black">
-      <IntlProvider locale={shortLocale} messages={messages} onError={() => null}>
-        <ThemeProvider attribute="class" enableSystem={false}>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-        </ThemeProvider>
-      </IntlProvider>
-    </div>
+    <IntlProvider locale={shortLocale} messages={messages} onError={() => null}>
+      <ThemeProvider attribute="class" enableSystem={false}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </IntlProvider>
   );
 }
 

@@ -1,24 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import { useTheme } from 'next-themes';
-import { Logo, NavLink, NavMenu } from '@components';
+import { Logo, NavMenu } from '@components';
 import { motion } from 'framer-motion';
 import Hamburger from 'hamburger-react';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { useTheme } from 'next-themes';
+import { BiMoon, BiSun } from 'react-icons/bi';
 
 export const NavBar = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [isNavMenuOpened, setIsNavMenuOpened] = useState(false);
 
-  const handleChangeTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    }
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    if (theme === 'dark') {
-      setTheme('light');
-    }
-  };
+  if (!mounted) {
+    return null;
+  }
 
   const handleToggleNavMenu = () => {
     setIsNavMenuOpened((prevState) => !prevState);
@@ -32,21 +31,20 @@ export const NavBar = () => {
             <Logo />
           </div>
           <div className="flex items-center gap-4">
-            <NavLink>
-              <DarkModeSwitch
-                onChange={handleChangeTheme}
-                checked={theme === 'light'}
-                moonColor="#454545"
-                sunColor="#FFF"
-              />
-            </NavLink>
-            <NavLink className="z-50" onClick={handleToggleNavMenu}>
+            <div className="cursor-pointer">
+              {theme === 'light' ? (
+                <BiMoon size={24} onClick={() => setTheme('dark')} />
+              ) : (
+                <BiSun size={24} onClick={() => setTheme('light')} />
+              )}
+            </div>
+            <div className="z-50" onClick={handleToggleNavMenu}>
               <Hamburger
                 toggled={isNavMenuOpened}
                 toggle={() => handleToggleNavMenu}
                 size={24}
               />
-            </NavLink>
+            </div>
           </div>
         </div>
         <motion.div
