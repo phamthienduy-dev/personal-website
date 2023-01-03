@@ -5,17 +5,19 @@ import HeroIllustrationDark from './HeroIllustrationDark.svg';
 import HeroTest from './HeroTest.svg';
 import OmnifoodApp from './Omnifood.png';
 import ProfileImage from './ProfileImage.png';
-import LGCosmetics from './LGCosmetics.png';
-import HeraAdmin from './HeraAdmin.png';
+import LG from './LG.png';
+import Hera from './Hera.png';
+import Nestle from './Nestle.png';
 
 export {
   CTAIllustration,
   forkify,
+  LG,
   HeroIllustration,
   HeroIllustrationDark,
   OmnifoodApp,
   ProfileImage,
   HeroTest,
-  LGCosmetics,
-  HeraAdmin,
+  Hera,
+  Nestle,
 };
