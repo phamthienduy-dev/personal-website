@@ -49,7 +49,7 @@ export const NavBar = () => {
         </div>
         <motion.div
           animate={{ x: isNavMenuOpened ? 0 : '100%' }}
-          className="absolute top-0 right-0 z-40 h-screen w-1/2 bg-white"
+          className="absolute top-0 right-0 z-40 h-screen w-1/2 bg-white dark:bg-[#303030]"
           transition={{ duration: 0.3 }}
         >
           <NavMenu onMenuClose={() => setIsNavMenuOpened(false)} />

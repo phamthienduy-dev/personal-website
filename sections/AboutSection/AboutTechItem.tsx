@@ -7,7 +7,7 @@ type Props = {
 
 export const AboutTechItem: FC<Props & ComponentProps> = ({ children, className }) => {
   return (
-    <div className={`${className || ''} flex items-center`}>
+    <div className={`${className || ''} flex w-fit items-center`}>
       <div className="mr-2 h-2 w-2 rounded-full bg-primary" />
       <div className="text-2xl">{children}</div>
     </div>

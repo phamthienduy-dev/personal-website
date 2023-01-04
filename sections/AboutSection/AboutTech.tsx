@@ -28,7 +28,8 @@ export const AboutTech = () => {
         <div>
           <span className="mb-4 block text-5xl font-semibold">Tech</span>
           <UnderlineText
-            underlineBackground="bg-[#E5F0FF]"
+            underlineBackground="bg-secondary-100"
+            darkUnderlineBackground="dark:bg-primary"
             className="text-5xl font-bold"
           >
             Stack
