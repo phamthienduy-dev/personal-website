@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 import { Logo, NavMenu } from '@components';
 import { motion } from 'framer-motion';
-import Hamburger from 'hamburger-react';
 import { useTheme } from 'next-themes';
-import { BiMoon, BiSun } from 'react-icons/bi';
+
+import { MdOutlineLightMode, MdDarkMode, MdMenu, MdClose } from 'react-icons/md';
+import { useUICtx } from '@hooks';
+import classNames from 'classnames';
 
 export const NavBar = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [isNavMenuOpened, setIsNavMenuOpened] = useState(false);
+  const UIContext = useUICtx();
 
   useEffect(() => {
     setMounted(true);
@@ -19,9 +22,7 @@ export const NavBar = () => {
     return null;
   }
 
-  const handleToggleNavMenu = () => {
-    setIsNavMenuOpened((prevState) => !prevState);
-  };
+  const handleToggleNavMenu = () => UIContext?.setIsMenuOpen((prevState) => !prevState);
 
   return (
     <div className="mb-8">
@@ -33,23 +34,22 @@ export const NavBar = () => {
           <div className="flex items-center gap-4">
             <div className="cursor-pointer">
               {theme === 'light' ? (
-                <BiMoon size={24} onClick={() => setTheme('dark')} />
+                <MdDarkMode size={26} onClick={() => setTheme('dark')} />
               ) : (
-                <BiSun size={24} onClick={() => setTheme('light')} />
+                <MdOutlineLightMode size={26} onClick={() => setTheme('light')} />
               )}
             </div>
-            <div className="z-50" onClick={handleToggleNavMenu}>
-              <Hamburger
-                toggled={isNavMenuOpened}
-                toggle={() => handleToggleNavMenu}
-                size={24}
-              />
+            <div className="z-50 cursor-pointer" onClick={handleToggleNavMenu}>
+              {isNavMenuOpened ? <MdClose size={26} /> : <MdMenu size={26} />}
             </div>
           </div>
         </div>
         <motion.div
-          animate={{ x: isNavMenuOpened ? 0 : '100%' }}
-          className="absolute top-0 right-0 z-40 h-screen w-1/2 bg-white dark:bg-[#303030]"
+          animate={{ x: UIContext?.isMenuOpen ? 0 : '100%' }}
+          className={classNames(
+            'absolute top-0 right-0 z-40 h-full w-1/2 bg-white dark:bg-black',
+            // { hidden: !UIContext?.isMenuOpen },
+          )}
           transition={{ duration: 0.3 }}
         >
           <NavMenu onMenuClose={() => setIsNavMenuOpened(false)} />

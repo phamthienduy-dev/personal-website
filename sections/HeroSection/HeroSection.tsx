@@ -13,7 +13,7 @@ export const HeroSection = () => {
       <div className="grid grid-cols-2 grid-rows-1">
         <div className="flex flex-col justify-center py-48">
           <h1 className="mb-4 text-5xl">
-            <span>{formatMessage({ defaultMessage: 'Phạm Thiên Duy' })}</span>
+            <span>{formatMessage({ defaultMessage: 'Pham Thien Duy' })}</span>
           </h1>
           <UnderlineText
             className="mb-8 text-5xl font-bold"

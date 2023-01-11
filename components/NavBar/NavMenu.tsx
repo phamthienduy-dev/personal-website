@@ -7,7 +7,7 @@ type Props = {
 
 export const NavMenu: FC<Props> = ({ onMenuClose }) => {
   return (
-    <div className="flex h-full flex-col justify-center gap-4 text-center">
+    <div className="flex h-screen flex-col justify-start gap-4 p-32 text-left">
       <NavLink onClick={onMenuClose}>Home</NavLink>
       <NavLink onClick={onMenuClose}>About</NavLink>
       <NavLink onClick={onMenuClose}>Projects</NavLink>

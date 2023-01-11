@@ -22,7 +22,8 @@
       "@content": ["content/index.ts"],
       "@sections": ["sections/index.ts"],
       "@static": ["static/images/index.ts"],
-      "@types": ["types/index.ts"]
+      "@types": ["types/index.ts"],
+      "@hooks": ["./hooks/index.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
